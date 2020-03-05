@@ -24,7 +24,7 @@ public class CodeGenerator {
      * 读取控制台内容
      * </p>
      */
-    public static String scanner(String tip) {
+/*    public static String scanner(String tip) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder help = new StringBuilder();
         help.append("请输入" + tip + "：");
@@ -36,7 +36,7 @@ public class CodeGenerator {
             }
         }
         throw new MybatisPlusException("请输入正确的" + tip + "！");
-    }
+    }*/
 
     public static void main(String[] args) {
         // 代码生成器

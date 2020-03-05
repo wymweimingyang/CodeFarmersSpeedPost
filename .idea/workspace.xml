@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db4c5b2d-8040-4045-92ed-fa641203faa5" name="Default Changelist" comment="" />
+    <list default="true" id="db4c5b2d-8040-4045-92ed-fa641203faa5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/ApplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/CityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/CompanyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CompanyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/CompanyuserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CompanyuserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/JobneedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/JobneedMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PostMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/PostclassifyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PostclassifyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/RegionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RegionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/WorkerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WorkerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/null/WorkuserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WorkuserMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +33,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YfIZwrIIg2JCys6KZJsyHXCqxV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,9 +44,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DevelopmentTool\JavaProject\IDEA\CodeFarmersSpeedPost\src\main\resources\mapper" />
+      <recent name="D:\DevelopmentTool\JavaProject\IDEA\CodeFarmersSpeedPost\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DevelopmentTool\JavaProject\IDEA\CodeFarmersSpeedPost\src\main\java\com\example" />
     </key>
@@ -85,37 +110,62 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583327280160</updated>
-      <workItem from="1583327283165" duration="518000" />
+      <workItem from="1583327283165" duration="891000" />
+      <workItem from="1583404884189" duration="665000" />
     </task>
+    <task id="LOCAL-00001" summary="码农速职框架搭建">
+      <created>1583327975001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583327975001</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="码农速职框架搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="码农速职框架搭建" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="259" y="8" key="CommitChangelistDialog2" timestamp="1583327901153">
+    <state x="259" y="8" key="CommitChangelistDialog2" timestamp="1583327972379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="259" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583327901153" />
+    <state x="259" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583327972379" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1583327855738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583327855738" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583327812719">
+    <state x="596" y="303" key="Github.ShareDialog" timestamp="1583328130250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583327812719" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583327812719">
+    <state x="596" y="303" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1583328130250" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583328179241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583327812719" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583327812719">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583328179241" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583328179241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583327812719" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583327812719">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583328179241" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583328179241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583327812719" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583328179241" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583328179241">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583328179241" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1583328050101">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583328050101" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583404884230">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583404884230" />
   </component>
 </project>
