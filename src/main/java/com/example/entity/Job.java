@@ -3,6 +3,7 @@ package com.example.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import lombok.Data;
@@ -15,7 +16,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author wanghao
- * @since 2020-03-04
+ * @since 2020-03-05
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -33,19 +34,18 @@ public class Job implements Serializable {
     @TableField("educationReq")
     private String educationReq;
 
-    @TableField("titleReq")
-    private String titleReq;
-
-    private String duty;
-
-    private String taskdescription;
-
     private Integer pid;
 
     @TableField("yearsReq")
     private Integer yearsReq;
 
-    private Integer state;
+    @TableField("reqPeople")
+    private Integer reqPeople;
+
+    private Float payment;
+
+    @TableField("putDate")
+    private LocalDateTime putDate;
 
 
 }

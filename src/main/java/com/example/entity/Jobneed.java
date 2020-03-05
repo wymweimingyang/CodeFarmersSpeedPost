@@ -1,7 +1,6 @@
 package com.example.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.time.LocalDate;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import lombok.Data;
@@ -14,7 +13,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author wanghao
- * @since 2020-03-04
+ * @since 2020-03-05
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -28,14 +27,14 @@ public class Jobneed implements Serializable {
 
     private Long cid;
 
-    @TableField("putDate")
-    private LocalDate putDate;
+    @TableField("jobInfo")
+    private String jobInfo;
 
-    private Integer people;
+    @TableField("contactWay")
+    private String contactWay;
 
-    private Float payment;
-
-    private Integer state;
+    @TableField("companyInfo")
+    private String companyInfo;
 
 
 }
