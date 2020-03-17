@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>userList</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/bootstrap.css}" href="../static/css/bootstrap.css"
+          type="text/css"/>
+    <style>
+        li{
+            list-style: none;
+
+        }
+
+    </style>
+
+</head>
+<body class="container">
+<h1>列表测试</h1>
+<br/><br/>
+<!--<form action="/demo/job/search" method="post">
+    岗位：<input th:type="text" th:name="jname">
+&lt;!&ndash;    地点：<input th:type="text" th:name="address">&ndash;&gt;
+    <input th:type="submit" th:value="搜索">-->
+    <br/><br/><br/><br/>
+    <div class="d">
+        <p>
+            岗位：
+            <a th:href="'/demo/worker/getListrest?wtype=无'" style="color: red">所有</a>
+            <a th:href="'/demo/worker/getListrest?wtype=Java开发工程师'">Java开发工程师</a>
+            <a th:href="'/demo/worker/getListrest?wtype=运维工程师'">运维工程师</a>
+            <a th:href="'/demo/worker/getListrest?wtype=实施工程师'">实施工程师</a>
+            <a th:href="'/demo/worker/getListrest?wtype=测试工程师'">测试工程师</a>
+        </p>
+        <p>
+            发布日期:
+            <a th:href="'/demo/worker/getListrest?pageNum=1'" style="color: red">所有</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">24小时内</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">近三天</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">近一周</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">近一月</a>
+        </p>
+        <p>
+            求职月薪:
+            <a th:href="'/demo/worker/getListrest?pageNum=1'" style="color: red">所有</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">3千以下</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">3-5千</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">5-6.5千</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">6.5-8千</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">0.8-1万</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">1-1.5万</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">1.5-2万</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">2-3万</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">3-4万</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">4-5万</a>
+            <a th:href="'/demo/worker/getListrest?pageNum=1'">5万以上</a>
+        </p>
+        <p>
+            工作经验:
+            <a th:href="'/demo/worker/getListrest?years=5'" style="color: red">所有</a>
+            <a th:href="'/demo/worker/getListrest?years=1'" >1-3年</a>
+            <a th:href="'/demo/worker/getListrest?years=2'" >3-5年</a>
+            <a th:href="'/demo/worker/getListrest?years=3'" >5-10年</a>
+            <a th:href="'/demo/worker/getListrest?years=4'" >10年以上</a>
+            <a th:href="'/demo/worker/getListrest?years=0'" >无经验</a>
+        </p>
+        <p>
+            学历:
+            <a th:href="'/demo/worker/getListrest?education=无'" style="color: red">所有</a>
+            <a th:href="'/demo/worker/getListrest?education=初中'">高中以下</a>
+            <a th:href="'/demo/worker/getListrest?education=中'">高中/中专</a>
+            <a th:href="'/demo/worker/getListrest?education=大专'">大专</a>
+            <a th:href="'/demo/worker/getListrest?education=本科'">本科</a>
+            <a th:href="'/demo/worker/getListrest?education=硕士'">硕士</a>
+            <a th:href="'/demo/worker/getListrest?education=博士'">博士</a>
+            <a th:href="'/demo/worker/getListrest?education=无'">无学历要求</a>
+        </p>
+    </div>
+<br/><br/><br/><br/>
+<div class="with:80%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>出生日期</th>
+            <th>工作经验/年</th>
+            <th>求职方向</th>
+            <th>学历背景</th>
+            <th>查看详情</th>
+            <!--            <th>regTime</th>-->
+            <!--            <th>Edit</th>-->
+            <!--            <th>Delete</th>-->
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="work : ${work}">
+            <td th:text="${work.wname}">neo</td>
+            <div th:if="${work.sex} eq '0'">
+                <td>男</td>
+            </div>
+            <div th:if="${work.sex} eq '1'">
+                <td>女</td>
+            </div>
+            <td th:text="${work.birth}">6</td>
+            <td th:text="${work.years}">6</td>
+            <td th:text="${work.wtype}">6</td>
+            <td th:text="${work.education}">6</td>
+            <div th:if="${work.state} eq '0'">
+                <td><a th:href="'/demo/worker/getInfoListPage'">查看</a></td>
+            </div>
+            <div th:if="${work.state} eq '1'">
+                <td><a th:href="'/demo/worker/getInfoListPage'"></a></td>
+            </div>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+<div class="modal-footer no-margin-top">
+    <ul class="pagination pull-right no-margin">
+
+        <!-- 首页 -->
+        <li>
+            <a th:href="'/demo/worker/getList?pageNum=1'">首页</a>
+        </li>
+
+        <!-- 上一页 -->
+        <li th:if="${Num eq '0'}">
+            <a th:href="'#'" th:text="上一页" th:if="${Num eq '0'}"></a>
+        </li>
+        <li th:if="${Num ne 0}">
+            <a th:href="'/demo/worker/getList?pageNum=' + ${Num-1}" th:text="上一页" ></a>
+        </li>
+
+        <!-- 中间页 -->
+        <li th:each="pageNum:${#numbers.sequence(1,z)}">
+            <a th:href="'/demo/worker/getList?pageNum=' + ${pageNum}" th:text="${pageNum }" th:if="${pageNum ne Num}"></a>
+            <a th:href="'/demo/worker/getList?pageNum=' + ${pageNum}" th:text="${pageNum }" th:if="${pageNum eq Num}" th:style="'font-weight:bold;background: #6faed9;'"></a>
+        </li>
+
+        <!-- 下一页 -->
+        <li th:if="${Num eq z}">
+            <a th:href="'#'" th:text="下一页" th:if="${Num eq '0'}"></a>
+        </li>
+        <li th:if="${Num ne z}">
+            <a th:href="'/demo/worker/getList?pageNum=' + ${Num+1}" th:text="下一页" ></a>
+        </li>
+
+        <!-- 尾页 -->
+        <li>
+            <a th:href="'/demo/worker/getList?pageNum=' + ${z}">尾页</a>
+        </li>
+
+    </ul>
+</div>
+    <script type="text/javascript" th:src="@{/js/jquery-1.12.4.js}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".d p a").click(function () {
+                $(this).css("color","red");
+                $(this).parent().children(":first").css("color","black");
+            })
+        })
+    </script>
+</body>
+</html>

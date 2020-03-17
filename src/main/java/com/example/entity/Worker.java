@@ -1,5 +1,6 @@
 package com.example.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.time.LocalDate;
@@ -46,9 +47,37 @@ public class Worker implements Serializable {
 
     private String education;
 
-    private String accessory;
-
     private Integer state;
+    @TableField("isPrivate")
+    private Integer isPrivate;
+
+    private Integer userid;
 
 
+    public Worker() {
+    }
+
+    public Integer getYears() {
+        return years;
+    }
+
+    public void setYears(Integer years) {
+        this.years = years;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+
+    public void setEducation(String education) {
+        this.education = education;
+    }
+
+    public String getWtype() {
+        return wtype;
+    }
+
+    public void setWtype(String wtype) {
+        this.wtype = wtype;
+    }
 }

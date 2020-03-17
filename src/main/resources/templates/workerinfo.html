@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="${word.title}"></h1>
+    <br/>
+    <div>
+        姓名：<span th:text="${word.wname}"></span><br/>生日：<span th:text="${word.birth}"></span>
+    </div>
+    <div th:if="${word.sex} eq '0'">
+        性别：<span>男</span>
+    </div>
+    <div th:if="${word.sex} eq '1'">
+        性别：<span>女</span>
+    </div>
+    <div>
+        求职方向:<span th:text="${word.wtype}"></span>
+    </div>
+    <div>
+        掌握技术:<span th:text="${word.skill}"></span>
+    </div>
+    <div>
+        学历背景:<span th:text="${word.education}"></span>
+    </div>
+    <div >
+        <button type="button" class="btn btn-default btn-lg">发送邀请</button>
+    </div>
+</body>
+</html>
